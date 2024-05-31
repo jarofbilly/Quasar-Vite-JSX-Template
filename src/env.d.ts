@@ -7,3 +7,12 @@ declare namespace NodeJS {
     VUE_ROUTER_BASE: string | undefined;
   }
 }
+
+declare global {
+  namespace JSX {
+      interface IntrinsicAttributes {
+          [name: string]: any
+      }
+  }
+}
+export { }
